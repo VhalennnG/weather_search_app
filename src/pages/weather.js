@@ -25,6 +25,7 @@ const Weather = () => {
             position: "top-center",
             pauseOnHover: false,
             draggable: true,
+            stacked: true,
             progress: undefined,
           });
         }
@@ -44,6 +45,7 @@ const Weather = () => {
         position: "top-center",
         pauseOnHover: false,
         draggable: true,
+        stacked: true,
         progress: undefined,
       });
       return;
