@@ -1,7 +1,11 @@
+# Weather Search App
+
 <p align="center">
   <img src="public/ss.png" alt="Screenshot" />
   <br />
-  <a href="https://weather-search-app-amber.vercel.app/">Demo Web</a>
+  <br />
+  <br />
+  <a href="https://weather-search-app-amber.vercel.app/" style="font-size: 24px; font-weight: bold;">Demo Web</a>
 </p>
 
 # Getting Started with Create React App
