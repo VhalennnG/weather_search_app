@@ -20,7 +20,6 @@
 - [Available Scripts](#available-scripts)
 - [Learn More](#learn-more)
 - [Deployment](#deployment)
-- [License](#license)
 
 ## Introduction
 
@@ -110,10 +109,7 @@ npm run test
 
 ## Available Scripts
 
-<<<<<<< HEAD
 In the project directory, you can run the following scripts:
-=======
->>>>>>> fa1b530e056a6383223d4a319ecba83af545c249
 
 - **Install project dependencies**:
   ```bash
