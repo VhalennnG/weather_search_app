@@ -1,6 +1,9 @@
+import { DateTime } from "luxon";
+
 export const convertTimeStamp = (timestamp, timezone) => {
   const convertTimezone = timezone / 3600;
   const date = new Date(timestamp * 1000);
+
   const options = {
     weekday: "long",
     day: "numeric",
@@ -14,7 +17,14 @@ export const convertTimeStamp = (timestamp, timezone) => {
     hour12: true,
   };
 
-  return date.toLocaleString("en-US", options);
+  try {
+    return date.toLocaleString("en-US", options);
+  } catch (error) {
+    const luxonDate = DateTime.fromSeconds(timestamp, { zone: "UTC" }).plus({
+      seconds: timezone,
+    });
+    return luxonDate.toLocaleString(DateTime.DATETIME_FULL);
+  }
 };
 
 export const convertCountryCode = (country) => {

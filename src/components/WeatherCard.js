@@ -47,7 +47,13 @@ const WeatherCard = ({
           <div className='mb-8 text-sm'>
             {weatherData.dt &&
               weatherData.timezone &&
-              convertTimeStamp(weatherData.dt, weatherData.timezone)}
+              (() => {
+                try {
+                  return convertTimeStamp(weatherData.dt, weatherData.timezone);
+                } catch (error) {
+                  return "Timezone is currently not supported.";
+                }
+              })()}
           </div>
           <div className='bg-[#1e1e1e] inline-block py-2 px-4 rounded-3xl'>
             {weatherData.weather && <p>{weatherData.weather[0].main}</p>}
