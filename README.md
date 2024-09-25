@@ -8,95 +8,147 @@
   <br />
 </p>
 
-# Getting Started with Create React App
+## Table of Contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Introduction](#introduction)
+- [Features](#features)
+- [Development Environment Setup](#development-environment-setup)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Setting up .env](#setting-up-env)
+  - [Running the Application](#running-the-application)
+- [Available Scripts](#available-scripts)
+- [Learn More](#learn-more)
+- [Deployment](#deployment)
+- [License](#license)
+
+## Introduction
+
+The **Weather Search App** is a React-based application that allows users to search for the weather in any city. It fetches real-time data from the OpenWeatherMap API and displays the current weather, temperature, and other relevant information.
+
+## Features
+
+- Search for weather by city.
+- Real-time data fetching from OpenWeatherMap API.
+- Responsive design for all device sizes.
+
+## Development Environment Setup
+
+### Prerequisites
+
+Before setting up the application, ensure you have the following installed on your machine:
+
+1. **Node.js and npm**: Download and install Node.js from the [official website](https://nodejs.org/). This will also install npm, which is the Node.js package manager.
+
+   - To verify the installation, run the following commands in your terminal:
+     ```bash
+     node -v
+     npm -v
+     ```
+
+2. **Git**: Ensure you have Git installed to clone the repository. You can download Git from [here](https://git-scm.com/downloads).
+   - To verify the installation, run:
+     ```bash
+     git --version
+     ```
+
+### Installation
+
+Follow these steps to set up the project:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/VhalennnG/weather_search_app.git
+   ```
+2. **Navigate to the project directory**:
+   ```bash
+   cd weather_search_app
+   ```
+3. **Install project dependencies**:
+   ```bash
+   npm install
+   ```
+   This command installs all the required packages listed in the `package.json` file.
+
+### Setting up .env
+
+After installing the dependencies, you need to set up a `.env` file to store sensitive information like your API key for OpenWeatherMap.
+
+1.  **Create a `.env` file** in the root of your project:
+    ```bash
+    touch .env
+    ```
+2.  **Add your API Key** to the `.env` file: Inside the `.env` file, add the following line:
+    ```bash
+    REACT_APP_API_KEY=your_api_key_here
+    ```
+    Make sure to replace `your_api_key_here` with your actual API key from OpenWeatherMap.
+3.  Save the `.env` file.
+
+## Running the Application
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+This will start a local development server. Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the app.
+
+## Testing
+
+Run the following command to launch the test runner in interactive mode:
+
+```bash
+npm run test
+```
+
+## Troubleshooting
+
+- **API Key issues**: Make sure your API key is valid and correctly set in the `.env` file. If the key is invalid, you may see errors related to authorization (401 Unauthorized).
+- **CORS Issues**: If you're getting CORS-related errors, it may be due to restrictions from the API provider.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run the following scripts:
 
-### `npm install`
-
-Installs the project dependencies.
-
-Make sure to run this command after cloning the repository or whenever new dependencies are added to the `package.json` file.
-
-In the project directory, you can run:
-
-### Setting up `.env`
-
-After installing the dependencies, you need to set up a `.env` file to store sensitive information like API keys. Follow these steps:
-
-1.  **Create a `.env` file in the root of your project:**
-
-    In the root directory of your React project, create a new file named `.env`.
-
-2.  **Add your API Key to the `.env` file:**
-
-    Inside the `.env` file, add your API Key like this. Make sure the variable starts with `REACT_APP_` to be accessible within React.
-
-    `REACT_APP_API_KEY=your_api_key_here`
-
-### `npm run dev`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm run test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Install project dependencies**:
+  ```bash
+  npm install
+  ```
+  Installs the project dependencies. Run this after cloning the project or whenever dependencies are updated.
+- **Run the app in development mode**:
+  ```bash
+  npm run dev
+  ```
+  Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make edits.
+- **Launch the test runner**:
+  ```bash
+  npm run test
+  ```
+  Launches the test runner in interactive watch mode. Refer to the Create React App documentation for more information.
+- **Build the app for production**:
+  ```bash
+  npm run build
+  ```
+  Builds the app for production to the `build` folder. It bundles the app in production mode and optimizes the build for better performance.
+- **Eject the app**:
+  ```bash
+  npm run eject
+  ```
+  This is a one-way operation. Once you eject, you cannot go back. This command copies all the configuration files and dependencies (Webpack, Babel, etc.) into the project so you can have full control over them.
 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To deploy this app to a hosting service like Vercel, follow these steps:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  **Build the project**:
+    ```bash
+    npm run build
+    ```
+2.  **Deploy to Vercel**: Follow the Vercel Deployment Guide to deploy your project. Ensure your `.env` variables are set correctly in the Vercel dashboard for production.

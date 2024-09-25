@@ -15,7 +15,7 @@ export const getWeather = async (city, unit) => {
       } else if (data.cod === "404") {
         throw new Error(`${city} city is not found.`);
       } else {
-        throw new Error("An unexpected error occurred.");
+        throw new Error(data.message || "An unexpected error occurred.");
       }
     }
   } catch (error) {
