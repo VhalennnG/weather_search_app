@@ -38,7 +38,7 @@ The **Weather Search App** is a React-based application that allows users to sea
 Before setting up the application, ensure you have the following installed on your machine:
 
 1. **Node.js and npm**: Download and install Node.js from the [official website](https://nodejs.org/). This will also install npm, which is the Node.js package manager.
-
+   - Recommended Version : Node.js >= 18.x and npm >= 9.6.0
    - To verify the installation, run the following commands in your terminal:
      ```bash
      node -v
