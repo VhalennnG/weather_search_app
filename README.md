@@ -21,10 +21,6 @@
 - [Learn More](#learn-more)
 - [Deployment](#deployment)
 
-## Introduction
-
-The **Weather Search App** is a React-based application that allows users to search for the weather in any city. It fetches real-time data from the OpenWeatherMap API and displays the current weather, temperature, and other relevant information.
-
 ## Features
 
 - Search for weather by city.
@@ -38,6 +34,7 @@ The **Weather Search App** is a React-based application that allows users to sea
 Before setting up the application, ensure you have the following installed on your machine:
 
 1. **Node.js and npm**: Download and install Node.js from the [official website](https://nodejs.org/). This will also install npm, which is the Node.js package manager.
+
    - Recommended Version : Node.js >= 18.x and npm >= 9.6.0
    - To verify the installation, run the following commands in your terminal:
      ```bash
