@@ -4,8 +4,8 @@
   <img src="public/ss.png" alt="Screenshot" />
   <br />
   <br />
+  <a href="https://weather-search-app-amber.vercel.app/" style="font-size: 40px; font-weight: bold;">Demo Web</a>
   <br />
-  <a href="https://weather-search-app-amber.vercel.app/" style="font-size: 24px; font-weight: bold;">Demo Web</a>
 </p>
 
 # Getting Started with Create React App
