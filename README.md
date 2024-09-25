@@ -4,7 +4,7 @@
   <img src="public/ss.png" alt="Screenshot" />
   <br />
   <br />
-  <a href="https://weather-search-app-amber.vercel.app/" style="font-size: 40px; font-weight: bold;">Demo Web</a>
+  <a href="https://weather-search-app-amber.vercel.app/" style="font-size: 40px; font-weight: bold;">View Demo</a>
   <br />
 </p>
 
