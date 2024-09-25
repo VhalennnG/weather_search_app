@@ -16,7 +16,7 @@ const WeatherCard = ({
   convertCountryCode,
 }) => {
   return (
-    <div className='bg-neutral-900 text-white md:w-[700px] w-11/12 sm:p-8 p-4 mx-auto sm:mt-16 rounded-xl'>
+    <div className='bg-neutral-900 text-white md:w-[700px] w-11/12 sm:p-8 p-4 mx-auto sm:mt-16 mt-6 rounded-xl'>
       <form className='relative' onSubmit={handleSearchSubmit}>
         <div className='flex flex-row gap-2 rounded border-none bg-neutral-800 py-2 px-4'>
           <button type='submit' className='text-md text-white'>

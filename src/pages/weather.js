@@ -41,11 +41,11 @@ const Weather = () => {
 
   return (
     <div className='weather-bg min-h-screen pt-1 py-3'>
-      <ul>
+      {/* <ul>
         {[...Array(7)].map((_, index) => (
           <li key={index} className='weather-bg' />
         ))}
-      </ul>
+      </ul> */}
       <WeatherCard
         weatherData={weatherData}
         units={units}

@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="public/ss.png" alt="Screenshot" />
+  <br />
+  <a href="https://weather-search-app-amber.vercel.app/">Demo Web</a>
+</p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
