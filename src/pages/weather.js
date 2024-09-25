@@ -20,7 +20,13 @@ const Weather = () => {
           const data = await getWeather(selectCity, units);
           setWeatherData(data);
         } catch (error) {
-          toast.error(error.message);
+          toast.error(error.message, {
+            theme: "dark",
+            position: "top-center",
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+          });
         }
       }
     };
@@ -33,7 +39,13 @@ const Weather = () => {
     e.preventDefault();
     const searchValue = e.target.elements.citySearch.value;
     if (searchValue.trim() === "") {
-      toast.warning("Please input a city");
+      toast.warning("Please input a city", {
+        theme: "dark",
+        position: "top-center",
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+      });
       return;
     }
     setSelectCity(searchValue);

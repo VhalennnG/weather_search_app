@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Weather from "./pages/weather";
-import NotFound from "./pages/notFound"; // Buat komponen NotFound
+import NotFound from "./pages/notFound";
 
 function App() {
   return (
@@ -13,12 +13,7 @@ function App() {
           <Route path='/' element={<Weather />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
-        <ToastContainer
-          position='top-center'
-          theme='dark'
-          pauseOnHover={false}
-          stacked
-        />
+        <ToastContainer />
       </div>
     </Router>
   );
