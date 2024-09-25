@@ -6,7 +6,29 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm install`
+
+Installs the project dependencies.
+
+Make sure to run this command after cloning the repository or whenever new dependencies are added to the `package.json` file.
+
+In the project directory, you can run:
+
+### Setting up `.env`
+
+After installing the dependencies, you need to set up a `.env` file to store sensitive information like API keys. Follow these steps:
+
+1.  **Create a `.env` file in the root of your project:**
+
+    In the root directory of your React project, create a new file named `.env`.
+
+2.  **Add your API Key to the `.env` file:**
+
+    Inside the `.env` file, add your API Key like this. Make sure the variable starts with `REACT_APP_` to be accessible within React.
+
+    `REACT_APP_API_KEY=your_api_key_here`
+
+### `npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
